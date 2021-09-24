@@ -1,4 +1,3 @@
-
 require 'rails_helper'
 
 RSpec.describe 'Flights Index Page' do
@@ -25,7 +24,6 @@ RSpec.describe 'Flights Index Page' do
 
   describe 'user story 1: Flights Index Page' do
     it 'shows all flight numbers' do
-      # save_and_open_page
       within("#flight-#{@flight1.id}") do
         expect(page).to have_content(@flight1.number)
         expect(page).to have_content(@airline1.name)
